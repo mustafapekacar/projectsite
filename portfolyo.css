@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #444444;
+    color: #f9f9f9;
+}
+header {
+    background-color: #2C2C2C;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+nav a {
+    color: #D3D3D3;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #444444;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: #555555;
+}
+.portfolio-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #2C2C2C;
+    border-radius: 8px;
+}
+.portfolio-item {
+    background-color: #636363;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.portfolio-item h3 {
+    font-size: 22px;
+    color: #f9f9f9;
+}
+.portfolio-item p {
+    color: #D3D3D3;
+}
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 20px;
+        font-size: 16px;
+    }
+
+    /* Biyografi bölümü düzenleme */
+    .biography-container {
+        flex-direction: column; /* Flexbox'u dikey hale getirelim */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .biography img {
+        width: 120px; /* Fotoğraf boyutunu küçültelim */
+        height: 120px;
+    }
+
+    .biography {
+        text-align: center; /* Metni ortalayalım */
+        padding-right: 0;
+    }
+
+    /* Font boyutlarını ve aralıkları küçültelim */
+    .biography h2 {
+        font-size: 20px;
+    }
+
+    .biography p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+/* 480px'den daha küçük ekranlar için ekstra düzenleme */
+@media only screen and (max-width: 480px) {
+    nav a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .biography h2 {
+        font-size: 18px;
+    }
+
+    .biography p {
+        font-size: 12px;
+    }
+}
