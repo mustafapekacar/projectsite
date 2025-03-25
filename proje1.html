@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1.Proje</title>
+    <title>Proje Detayları</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <nav class="navbar">
+        <button class="back-button" onclick="history.back()">Geri Git</button>
+    </nav>
 
-  
+    <div class="container">
+        <div class="sidebar">
+            <button class="tab-button" onclick="showContent('devre')">Devre Şeması</button>
+            <button class="tab-button" onclick="showContent('foto')">Fotoğraflar</button>
+            <button class="tab-button" onclick="showContent('kod')">Kodlar</button>
+        </div>
+
+        <div class="content">
+            <div id="devre" class="tab-content">
+                <h2>Devre Şeması</h2>
+                <img src="devre-semasi.jpg" alt="Devre Şeması" width="300">
+            </div>
+
+            <div id="foto" class="tab-content" style="display: none;">
+                <h2>Proje Fotoğrafları</h2>
+                <img src="proje-foto.jpg" alt="Proje Fotoğrafı" width="300">
+            </div>
+
+            <div id="kod" class="tab-content" style="display: none;">
+                <h2>Proje Kodları</h2>
+                <pre>
+                    <code>
+// Örnek kod
+void setup() {
+    pinMode(13, OUTPUT);
+}
+void loop() {
+    digitalWrite(13, HIGH);
+    delay(1000);
+    digitalWrite(13, LOW);
+    delay(1000);
+}
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
