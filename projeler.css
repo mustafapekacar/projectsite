@@ -5,17 +5,20 @@ body {
     background-color: #444444;
     color: #f9f9f9;
 }
+
 header {
     background-color: #2C2C2C;
     color: white;
     padding: 15px 0;
     text-align: center;
 }
+
 nav {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
+
 nav a {
     color: #D3D3D3;
     margin: 0 20px;
@@ -26,10 +29,12 @@ nav a {
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
+
 nav a:hover {
     background-color: #555555;
 }
-.portfolio-container {
+
+.project-container {
     max-width: 900px;
     margin: 30px auto;
     display: grid;
@@ -39,20 +44,24 @@ nav a:hover {
     background-color: #2C2C2C;
     border-radius: 8px;
 }
-.portfolio-item {
+
+.project-item {
     background-color: #636363;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.portfolio-item h3 {
+
+.project-item h3 {
     font-size: 22px;
     color: #f9f9f9;
 }
-.portfolio-item p {
+
+.project-item p {
     color: #D3D3D3;
 }
-.portfolio-item img {
+
+.project-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -75,25 +84,23 @@ nav a:hover {
         margin: 0 20px;
         font-size: 16px;
     }
-
-    /* Biyografi bölümü düzenleme */
+    
     .biography-container {
-        flex-direction: column; /* Flexbox'u dikey hale getirelim */
+        flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
     .biography img {
-        width: 120px; /* Fotoğraf boyutunu küçültelim */
+        width: 120px;
         height: 120px;
     }
 
     .biography {
-        text-align: center; /* Metni ortalayalım */
+        text-align: center;
         padding-right: 0;
     }
 
-    /* Font boyutlarını ve aralıkları küçültelim */
     .biography h2 {
         font-size: 20px;
     }
@@ -104,7 +111,6 @@ nav a:hover {
     }
 }
 
-/* 480px'den daha küçük ekranlar için ekstra düzenleme */
 @media only screen and (max-width: 480px) {
     nav a {
         font-size: 14px;
