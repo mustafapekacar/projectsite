@@ -68,13 +68,10 @@ nav a:hover {
     object-fit: cover;
 }
 
-.link-tik {
-  position:absolute; 
-  height:100%;
-  width:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
+.project1-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 @media only screen and (max-width: 768px) {
