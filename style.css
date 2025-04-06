@@ -46,7 +46,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.biography-container {
+.biography-container .img {
     width: 345px;
     height: 460px;
 }
