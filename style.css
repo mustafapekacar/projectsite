@@ -47,7 +47,8 @@ nav a:hover {
 }
 
 .biography-container {
-    max-width: 50%;
+    width: 345px;
+    height: 460px;
 }
 
 .biography {
