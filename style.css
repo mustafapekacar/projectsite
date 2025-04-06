@@ -46,6 +46,10 @@ nav a:hover {
     border-radius: 8px;
 }
 
+.biography-container {
+    max-width: 50%;
+}
+
 .biography {
     flex: 1;
     padding-right: 20px;
